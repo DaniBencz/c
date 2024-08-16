@@ -15,8 +15,8 @@ int main() {
   int age;
   double number;
 
-  printf("int size = %zu\n", sizeof (age));
-  printf("double size = %zu\n", sizeof(number));
+  printf("int size = %zu\n", sizeof (age)); // int size = 4
+  printf("double size = %zu\n", sizeof(number)); // double size = 8
 
   return 0;
 }
