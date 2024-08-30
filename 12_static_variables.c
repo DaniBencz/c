@@ -9,7 +9,7 @@ void number(int n) {
 void tally(){
     // static variables are initialized only once
     // and retain their value between function calls
-    static int count = 0;
+    static int count; // Initialized to 0
     printf("count is %d\n", count);
     count++;
 }
