@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char hello[] = "Hello World!";
 
     // strlen()
@@ -11,6 +12,7 @@ int main() {
 
     // strcpy()
     // create a destination char-array of same size as hello
+    // hello = "Goodbye World!"; // error: assignment to expression with array type
     char dest[strlen(hello)];
     strcpy(dest, hello);
     printf("copied string is '%s'\n", dest);
@@ -24,9 +26,12 @@ int main() {
     // strcmp()
     char str1[] = "Hello";
     char str2[] = "Hello";
-    if (strcmp(str1, str2) == 0) {
+    if (strcmp(str1, str2) == 0)
+    {
         printf("'%s' and '%s' are equal\n", str1, str2);
-    } else {
+    }
+    else
+    {
         printf("'%s' and '%s' are not equal\n", str1, str2);
     }
 
